@@ -4,7 +4,7 @@
 
 Sybil lets you attach a basic social identity, consisting of a nickname and an avatar, to your Ethereum address that can be used easily used by any other dapp. The obvious candidates are social dapps (decentralized messaging, messageboards, microblogging, etc.), but many dapps in other domains would also benefit from the presence of nicknames and avatars to humanize their user's experience.
 
-__⚠️ Warning__: The Sybil protocol and library are alpha software, and run on a testnet. Features may, and will, change.
+__⚠️ Warning__: The Sybil protocol and library are alpha software, running on testnet. Features may, and will, change.
 
 ### Principles
 
