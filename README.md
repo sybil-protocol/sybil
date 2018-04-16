@@ -47,19 +47,21 @@ To get information about an address:
 
 ```javascript
 // get the nickname associated with an address
-await S.of('0x02f807d30DcA3bAb5C5b010F5D9a05e4876dcaB8').get('nickname');
+await S.of('0x02f807d30DcA3bAb5C5b010F5D9a05e4876dcaB8').nickname();
+// => Heteronymous
 
 // get the avatar URL associated with an address
-await S.of('0x02f807d30DcA3bAb5C5b010F5D9a05e4876dcaB8').get('avatar');
+await S.of('0x02f807d30DcA3bAb5C5b010F5D9a05e4876dcaB8').avatar();
+// => https://ipfs.io/ipfs/QmRcYSp8pYp4ewgsNX7JR8TtiSYHPcauiCz4UmAKG9Sw3t
 ```
 
 To set information about an address:
 
 ```javascript
-// get the nickname associated with an address
+// set the nickname associated with an address
 await S.of('0x02f807d30DcA3bAb5C5b010F5D9a05e4876dcaB8').set('nickname', 'anastasis');
 
-// get the avatar URL associated with an address
+// set the avatar associated with an address after uploading to IPFS
 await S.of('0x02f807d30DcA3bAb5C5b010F5D9a05e4876dcaB8').setWithIPFS('avatar', myImageBlob);
 ```
 
